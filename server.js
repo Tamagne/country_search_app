@@ -1,8 +1,7 @@
 const express = require('express');
 const axios = require('axios');
 const app = express();
-const PORT = 5000; // Change to a new port
-
+const PORT = 5000; // You can change this to another port if needed
 
 // Serve static files
 app.use(express.static('public'));
@@ -23,5 +22,5 @@ app.get('/api/country', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
